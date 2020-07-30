@@ -11,7 +11,12 @@
 	}
 	&[disabled] { cursor: not-allowed; }
 	.icon,
-	.fa {
+	.fa,
+	.fas,
+	.far,
+	.fal,
+	.fad,
+	.fab {
 		font-size: 14px;
 		margin-right: 5px;
 		vertical-align: middle;

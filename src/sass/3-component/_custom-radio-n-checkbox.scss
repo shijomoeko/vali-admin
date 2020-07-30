@@ -9,11 +9,11 @@
 			user-select: none;
 
 			&:before {
-				content: "";
-				font-family: "FontAwesome";
+				content: "";
+				font-family: "Font Awesome 5 Free";
 				speak: none;
 				font-style: normal;
-				font-weight: normal;
+				font-weight: 400;
 				font-variant: normal;
 				text-transform: none;
 				line-height: 1;
@@ -28,6 +28,7 @@
 
 		&:checked + .label-text:before {
 			content: "";
+			font-weight: 900;
 			color: $primary-color;
 			animation: tick 180ms ease-in;
 		}
@@ -38,6 +39,7 @@
 			&:before {
 				content: "";
 				color: #ccc;
+				font-weight: 900;
 			}
 		}
 	}
@@ -52,11 +54,11 @@
 			user-select: none;
 
 			&:before {
-				content: "";
-				font-family: "FontAwesome";
+				content: "";
+				font-family: "Font Awesome 5 Free";
 				speak: none;
 				font-style: normal;
-				font-weight: normal;
+				font-weight: 400;
 				font-variant: normal;
 				text-transform: none;
 				line-height: 1;
@@ -81,6 +83,7 @@
 			&:before {
 				content: "";
 				color: #ccc;
+				font-weight: 900;
 			}
 		}
 	}
