@@ -16968,11 +16968,24 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+/*
+ * This combined file was created by the DataTables downloader builder:
+ *   https://datatables.net/download
+ *
+ * To rebuild or modify this file with the latest versions of the included
+ * software please visit:
+ *   https://datatables.net/download/#bs4/dt-1.10.21
+ *
+ * Included libraries:
+ *   DataTables 1.10.21
+ */
 table.dataTable {
   clear: both;
   margin-top: 6px !important;
   margin-bottom: 6px !important;
   max-width: none !important;
+  border-collapse: separate !important;
+  border-spacing: 0;
 }
 
 table.dataTable td,
@@ -16991,10 +17004,6 @@ table.dataTable.nowrap td {
   white-space: nowrap;
 }
 
-.tile div.dataTables_wrapper {
-  padding: 0;
-}
-
 div.dataTables_wrapper div.dataTables_length label {
   font-weight: normal;
   text-align: left;
@@ -17002,7 +17011,7 @@ div.dataTables_wrapper div.dataTables_length label {
 }
 
 div.dataTables_wrapper div.dataTables_length select {
-  width: 75px;
+  width: auto;
   display: inline-block;
 }
 
@@ -17126,6 +17135,9 @@ div.dataTables_scrollBody table {
   margin-bottom: 0 !important;
 }
 
+div.dataTables_scrollBody table thead .sorting:before,
+div.dataTables_scrollBody table thead .sorting_asc:before,
+div.dataTables_scrollBody table thead .sorting_desc:before,
 div.dataTables_scrollBody table thead .sorting:after,
 div.dataTables_scrollBody table thead .sorting_asc:after,
 div.dataTables_scrollBody table thead .sorting_desc:after {
@@ -17154,9 +17166,14 @@ div.dataTables_scrollFoot > .dataTables_scrollFootInner > table {
   div.dataTables_wrapper div.dataTables_paginate {
     text-align: center;
   }
+  div.dataTables_wrapper div.dataTables_paginate ul.pagination {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
 }
 
-table.dataTable.table-sm > thead > tr > th {
+table.dataTable.table-sm > thead > tr > th :not(.sorting_disabled) {
   padding-right: 20px;
 }
 
@@ -17173,6 +17190,10 @@ table.dataTable.table-sm .sorting_desc:after {
   top: 5px;
 }
 
+table.table-bordered.dataTable {
+  border-right-width: 0;
+}
+
 table.table-bordered.dataTable th,
 table.table-bordered.dataTable td {
   border-left-width: 0;
@@ -17181,7 +17202,7 @@ table.table-bordered.dataTable td {
 table.table-bordered.dataTable th:last-child, table.table-bordered.dataTable th:last-child,
 table.table-bordered.dataTable td:last-child,
 table.table-bordered.dataTable td:last-child {
-  border-right-width: 0;
+  border-right-width: 1px;
 }
 
 table.table-bordered.dataTable tbody th,
