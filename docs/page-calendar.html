@@ -148,19 +148,19 @@
               <div id="external-events">
                 <h4 class="mb-4">Draggable Events</h4>
                 <div id="external-events-list">
-                  <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event">
+                  <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event mb-1">
                     <div class="fc-event-main">My Event 1</div>
                   </div>
-                  <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event">
+                  <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event mb-1">
                     <div class="fc-event-main">My Event 2</div>
                   </div>
-                  <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event">
+                  <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event mb-1">
                     <div class="fc-event-main">My Event 3</div>
                   </div>
-                  <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event">
+                  <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event mb-1">
                     <div class="fc-event-main">My Event 4</div>
                   </div>
-                  <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event">
+                  <div class="fc-event fc-h-event fc-daygrid-event fc-daygrid-block-event mb-1">
                     <div class="fc-event-main">My Event 5</div>
                   </div>
                 </div>
@@ -221,6 +221,7 @@
       	var calendarEl = document.getElementById('calendar');
       	var calendar = new FullCalendar.Calendar(calendarEl, {
       	headerToolbar: {
+      		themeSystem: 'bootstrap',
       		left: 'prev,next today',
       		center: 'title',
       		right: 'dayGridMonth,timeGridWeek,timeGridDay,listWeek'
@@ -236,7 +237,6 @@
       	}
       	});
       	calendar.render();
-      
       
       });
     </script>

@@ -24072,10 +24072,10 @@ A HORIZONTAL event
 .fc-h-event {
   /* allowed to be top-level */
   display: block;
-  border: 1px solid #3788d8;
-  border: 1px solid var(--fc-event-border-color, #3788d8);
-  background-color: #3788d8;
-  background-color: var(--fc-event-bg-color, #3788d8);
+  border: 1px solid #009688;
+  border: 1px solid var(--fc-event-border-color, #009688);
+  background-color: #009688;
+  background-color: var(--fc-event-bg-color, #009688);
 }
 
 .fc-h-event .fc-event-main {
@@ -24261,8 +24261,8 @@ A HORIZONTAL event
 }
 
 .fc .fc-daygrid-day.fc-day-today {
-  background-color: rgba(255, 220, 40, 0.15);
-  background-color: var(--fc-today-bg-color, rgba(255, 220, 40, 0.15));
+  background-color: rgba(0, 150, 136, 0.2);
+  background-color: var(--fc-today-bg-color, rgba(0, 150, 136, 0.2));
 }
 
 .fc .fc-daygrid-day-frame {
@@ -24518,8 +24518,8 @@ A HORIZONTAL event
           box-sizing: content-box;
   width: 0;
   height: 0;
-  border: 4px solid #3788d8;
-  border: calc(var(--fc-daygrid-event-dot-width, 8px) / 2) solid var(--fc-event-border-color, #3788d8);
+  border: 4px solid #009688;
+  border: calc(var(--fc-daygrid-event-dot-width, 8px) / 2) solid var(--fc-event-border-color, #009688);
   border-radius: 4px;
   border-radius: calc(var(--fc-daygrid-event-dot-width, 8px) / 2);
 }
@@ -24539,10 +24539,10 @@ A VERTICAL event
 .fc-v-event {
   /* allowed to be top-level */
   display: block;
-  border: 1px solid #3788d8;
-  border: 1px solid var(--fc-event-border-color, #3788d8);
-  background-color: #3788d8;
-  background-color: var(--fc-event-bg-color, #3788d8);
+  border: 1px solid #009688;
+  border: 1px solid var(--fc-event-border-color, #009688);
+  background-color: #009688;
+  background-color: var(--fc-event-bg-color, #009688);
 }
 
 .fc-v-event .fc-event-main {
@@ -24783,8 +24783,8 @@ A VERTICAL event
 }
 
 .fc .fc-timegrid-col.fc-day-today {
-  background-color: rgba(255, 220, 40, 0.15);
-  background-color: var(--fc-today-bg-color, rgba(255, 220, 40, 0.15));
+  background-color: rgba(0, 150, 136, 0.2);
+  background-color: var(--fc-today-bg-color, rgba(0, 150, 136, 0.2));
 }
 
 .fc .fc-timegrid-col-frame {
@@ -25118,8 +25118,8 @@ A VERTICAL event
           box-sizing: content-box;
   width: 0;
   height: 0;
-  border: 5px solid #3788d8;
-  border: calc(var(--fc-list-event-dot-width, 10px) / 2) solid var(--fc-event-border-color, #3788d8);
+  border: 5px solid #009688;
+  border: calc(var(--fc-list-event-dot-width, 10px) / 2) solid var(--fc-event-border-color, #009688);
   border-radius: 5px;
   border-radius: calc(var(--fc-list-event-dot-width, 10px) / 2);
 }
