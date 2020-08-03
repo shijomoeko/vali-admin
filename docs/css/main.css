@@ -24638,7 +24638,7 @@ be a descendant of the grid when it is being dragged.
 
 .dropzone {
   min-height: 150px;
-  border: 2px solid rgba(0, 0, 0, 0.3);
+  border: 2px dashed rgba(0, 0, 0, 0.3);
   background: white;
   padding: 20px 20px;
 }
@@ -24669,6 +24669,7 @@ be a descendant of the grid when it is being dragged.
 
 .dropzone .dz-message {
   text-align: center;
+  color: rgba(0, 0, 0, 0.3);
   margin: 2em 0;
 }
 
