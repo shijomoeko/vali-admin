@@ -1,6 +1,6 @@
 .select2-selection--multiple {
   background-color: white;
-  border: 2px solid #ced4da;
+  border: 1px solid #aaa;
   border-radius: 4px;
   cursor: text;
 
@@ -16,28 +16,25 @@
     }
   }
 
-  .select2-selection__placeholder {
-    color: #999;
-
-    margin-top: 5px;
-
-    float: left;
-  }
-
   .select2-selection__clear {
     cursor: pointer;
     float: right;
     font-weight: bold;
     margin-top: 5px;
     margin-right: 10px;
+
+    // This padding is to account for the bottom border for the first
+    // selection row and the top border of the second selection row.
+    // Without it, selections on the first row may be offset incorrectly
+    // and appear in their own row instead of going to the second row
+    padding: 1px;
   }
 
   .select2-selection__choice {
-    display: inline-flex;
     background-color: #e4e4e4;
 
-    border: 1px solid #ced4da;
-    border-radius: 2px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
     cursor: default;
 
     float: left;
@@ -48,14 +45,13 @@
   }
 
   .select2-selection__choice__remove {
-    order: 1;
     color: #999;
     cursor: pointer;
 
     display: inline-block;
     font-weight: bold;
 
-    margin-left: 2px;
+    margin-right: 2px;
 
     &:hover {
       color: #333;
@@ -65,7 +61,7 @@
 
 &[dir="rtl"] {
   .select2-selection--multiple {
-    .select2-selection__choice, .select2-selection__placeholder, .select2-search--inline {
+    .select2-selection__choice, .select2-search--inline {
       float: right;
     }
 
@@ -83,7 +79,7 @@
 
 &.select2-container--focus {
   .select2-selection--multiple {
-    border-color: $primary-color;
+    border: solid black 1px;
     outline: 0;
   }
 }
