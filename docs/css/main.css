@@ -23339,6 +23339,11 @@ body.stop-scrolling {
   font-family: sans-serif, Verdana;
   font-size: smaller;
   padding: 3px;
+  pointer-events: none;
+}
+
+.jqvmap-pin {
+  pointer-events: none;
 }
 
 .jqvmap-zoomin, .jqvmap-zoomout {
@@ -23348,12 +23353,11 @@ body.stop-scrolling {
   background: #000000;
   padding: 3px;
   color: white;
-  width: 18px;
-  height: 18px;
+  width: 10px;
+  height: 10px;
   cursor: pointer;
-  line-height: 13px;
+  line-height: 10px;
   text-align: center;
-  font-size: 20px;
 }
 
 .jqvmap-zoomin {
