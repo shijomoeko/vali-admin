@@ -22889,7 +22889,7 @@ body.stop-scrolling {
           box-sizing: border-box;
   cursor: pointer;
   display: block;
-  height: 28px;
+  height: 35px;
   -moz-user-select: none;
    -ms-user-select: none;
        user-select: none;
@@ -22900,6 +22900,7 @@ body.stop-scrolling {
   display: block;
   padding-left: 8px;
   padding-right: 20px;
+  padding-top: 2px;
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
@@ -22955,7 +22956,7 @@ body.stop-scrolling {
 
 .select2-dropdown {
   background-color: white;
-  border: 1px solid #aaa;
+  border: 2px solid #ced4da;
   border-radius: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -23055,7 +23056,7 @@ body.stop-scrolling {
 
 .select2-container--default .select2-selection--single {
   background-color: #fff;
-  border: 1px solid #aaa;
+  border: 2px solid #ced4da;
   border-radius: 4px;
 }
 
@@ -23075,7 +23076,7 @@ body.stop-scrolling {
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-  height: 26px;
+  height: 30px;
   position: absolute;
   top: 1px;
   right: 1px;
@@ -23120,7 +23121,7 @@ body.stop-scrolling {
 
 .select2-container--default .select2-selection--multiple {
   background-color: white;
-  border: 1px solid #aaa;
+  border: 2px solid #ced4da;
   border-radius: 4px;
   cursor: text;
 }
@@ -23148,9 +23149,12 @@ body.stop-scrolling {
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   background-color: #e4e4e4;
-  border: 1px solid #aaa;
-  border-radius: 4px;
+  border: 1px solid #ced4da;
+  border-radius: 2px;
   cursor: default;
   float: left;
   margin-right: 5px;
@@ -23159,11 +23163,14 @@ body.stop-scrolling {
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   color: #999;
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
-  margin-right: 2px;
+  margin-left: 2px;
 }
 
 .select2-container--default .select2-selection--multiple .select2-selection__choice__remove:hover {
@@ -23185,7 +23192,7 @@ body.stop-scrolling {
 }
 
 .select2-container--default.select2-container--focus .select2-selection--multiple {
-  border: solid black 1px;
+  border-color: #009688;
   outline: 0;
 }
 
@@ -23272,7 +23279,7 @@ body.stop-scrolling {
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-  background-color: #5897fb;
+  background-color: #009688;
   color: white;
 }
 
