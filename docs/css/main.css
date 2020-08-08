@@ -27686,18 +27686,6 @@ A VERTICAL event
   cursor: not-allowed;
 }
 
-.btn .icon,
-.btn .fa,
-.btn .fas,
-.btn .far,
-.btn .fal,
-.btn .fad,
-.btn .fab {
-  font-size: 14px;
-  margin-right: 5px;
-  vertical-align: middle;
-}
-
 .app-title {
   display: -webkit-box;
   display: -ms-flexbox;

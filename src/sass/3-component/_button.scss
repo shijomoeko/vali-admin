@@ -10,15 +10,4 @@
 		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
 	}
 	&[disabled] { cursor: not-allowed; }
-	.icon,
-	.fa,
-	.fas,
-	.far,
-	.fal,
-	.fad,
-	.fab {
-		font-size: 14px;
-		margin-right: 5px;
-		vertical-align: middle;
-	}
 }
