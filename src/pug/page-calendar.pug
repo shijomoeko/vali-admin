@@ -48,6 +48,7 @@ block content
 
 block specific-js
 	script(type='text/javascript', src="js/plugins/fullcalendar.min.js")
+	script(type='text/javascript', src="js/plugins/locales/fullcalendar.ja.js")
 	script(type="text/javascript").
 		$(document).ready(function() {
 			/* initialize the external events
@@ -81,6 +82,7 @@ block specific-js
 
 			var calendarEl = document.getElementById('calendar');
 			var calendar = new FullCalendar.Calendar(calendarEl, {
+			locale: 'ja',
 			headerToolbar: {
 				themeSystem: 'bootstrap',
 				left: 'prev,next today',

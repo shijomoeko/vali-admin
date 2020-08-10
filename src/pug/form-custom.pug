@@ -165,9 +165,10 @@ block content
 							small.text-info (This is just a dropzone demo. Selected files are not actually uploaded.)
 
 block specific-js
-	script(type='text/javascript', src="js/plugins/bootstrap-datepicker.min.js")
 	script(type='text/javascript', src="js/plugins/select2.min.js")
+	script(type='text/javascript', src="js/plugins/locales/select2.ja.js")
 	script(type='text/javascript', src="js/plugins/bootstrap-datepicker.min.js")
+	script(type='text/javascript', src="js/plugins/locales/bootstrap-datepicker.ja.min.js")
 	script(type='text/javascript', src="js/plugins/dropzone.min.js")
 	script(type="text/javascript").
 		$('#sl').on('click', function(){
@@ -181,9 +182,12 @@ block specific-js
 		});
 
 		$('#demoDate').datepicker({
-			format: "dd/mm/yyyy",
+			format: "yyyy/mm/dd",
+			language: 'ja',
 			autoclose: true,
 			todayHighlight: true
 		});
 
-		$('#demoSelect').select2();
+		$('#demoSelect').select2({
+			language: 'ja'
+		});
