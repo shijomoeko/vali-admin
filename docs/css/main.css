@@ -27121,14 +27121,13 @@ A VERTICAL event
 
 @media (max-width: 767px) {
   .app-content {
-    margin-top: 50px;
     min-width: 100%;
   }
 }
 
 @media (max-width: 480px) {
   .app-content {
-    padding: 15px;
+    padding: 65px 15px 15px;
   }
 }
 
