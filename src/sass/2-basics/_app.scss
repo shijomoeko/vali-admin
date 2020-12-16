@@ -36,10 +36,9 @@
 	transition: margin-left 0.3s ease;
 	@media(min-width: 768px) { margin-left: $sidebar-width; }
 	@media(max-width: 767px) {
-		margin-top: 50px;
 		min-width: 100%;
 	}
-	@media(max-width: 480px) { padding: 15px; }
+	@media(max-width: 480px) { padding: 65px 15px 15px; }
 	@media print {
 		margin: 0;
 		padding: 0;

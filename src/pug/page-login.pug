@@ -17,11 +17,11 @@ html(lang="ja")
 						i.fas.fa-lg.fa-fw.fa-user
 						| SIGN IN
 					.form-group
-						label.control-label USERNAME
+						label USERNAME
 						input.form-control(type="text", placeholder="Email", autofocus)
 
 					.form-group
-						label.control-label PASSWORD
+						label PASSWORD
 						input.form-control(type="password", placeholder="Password")
 
 					.form-group
@@ -36,24 +36,26 @@ html(lang="ja")
 					.form-group.btn-container
 						button.btn.btn-primary.btn-block
 							i.fas.fa-sign-in-alt.fa-lg.fa-fw
-							| SIGN IN
+							|  SIGN IN
 
 				form.forget-form(action="index.html")
 					h3.login-head
 						i.fas.fa-lg.fa-fw.fa-lock
 						| Forgot Password ?
 					.form-group
-						label.control-label EMAIL
+						label EMAIL
 						input.form-control(type="text", placeholder="Email")
 
 					.form-group.btn-container
 						button.btn.btn-primary.btn-block
 							i.fas.fa-unlock.fa-lg.fa-fw
-							| RESET
+							|  RESET
 
 					.form-group.mt-3
 						p.semibold-text.mb-0
-							a(href="#" data-toggle="flip") <i class="fa fa-angle-left fa-fw"></i> Back to Login
+							a(href="#" data-toggle="flip")
+								i.fas.fa-angle-left.fa-fw
+								|  Back to Login
 
 		include includes/_javascript.pug
 
