@@ -27399,7 +27399,8 @@ A VERTICAL event
   left: 0;
   padding-top: 70px;
   width: 230px;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   z-index: 10;
   background-color: #222d32;
   -webkit-box-shadow: 0px 8px 17px rgba(0, 0, 0, 0.2);
@@ -27501,6 +27502,7 @@ A VERTICAL event
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
   width: 25px;
+  line-height: inherit;
 }
 
 .app-menu__label {
@@ -27543,6 +27545,7 @@ A VERTICAL event
           align-items: center;
   padding: 5px 5px 5px 20px;
   font-size: 1em;
+  white-space: nowrap;
   color: #fff;
 }
 
